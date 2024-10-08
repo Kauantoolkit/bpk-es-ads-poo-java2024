@@ -32,4 +32,48 @@ public class Pessoa {
     public List<Endereco> getEnderecos() {
         return enderecos;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public Pessoa getPai() {
+        return pai;
+    }
+
+    public void setPai(Pessoa pai) {
+        this.pai = pai;
+    }
+
+    public Pessoa getMae() {
+        return mae;
+    }
+
+    public void setMae(Pessoa mae) {
+        this.mae = mae;
+    }
+
+    public void setEnderecoAtual(Endereco enderecoAtual) {
+        this.enderecoAtual = enderecoAtual;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + getNome() + '\'' +
+                ", idade=" + getIdade() +
+                ", pai=" + getPai() +
+                ", mae=" + getMae() +
+                ", enderecoAtual=" + getEnderecoAtual() +
+                ", enderecos=" + getEnderecos() +
+                '}';
+    }
 }
